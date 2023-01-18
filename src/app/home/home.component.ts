@@ -43,6 +43,13 @@ prevRandomKitty : any
 prevRandomTalk : any
   onExplode(){
 this.explode = !this.explode
+if(this.explode){
+  let audio = new Audio();
+  audio.src = "assets/explosion.mp3";
+  audio.load();
+  audio.play();
+}
+
     this.kittenTalkText = ''
     this.talkText = ''
   }
