@@ -1,10 +1,10 @@
 <div class="outer-container" >
     <div *ngIf="!explode" class="inner-container">
-        <img (click)="onExplode()" src="../../assets/kitten.png" width="200" height="auto" alt="">
+        <img (click)="onExplode()" src="assets/kitten.png" width="200" height="auto" alt="">
         <h4>{{kittenTalkText}}</h4>
     </div>
     <div *ngIf="explode" class="inner-container">
-        <img (click)="onExplode()" src="../../assets/explosion.png" width="260" height="auto" alt="">
+        <img (click)="onExplode()" src="assets/explosion.png" width="260" height="auto" alt="">
     </div>
     <div>
         <button mat-raised-button color="accent" (click)="talk()">{{buttonText}}</button>
